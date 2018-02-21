@@ -1,20 +1,24 @@
 {
-  "name": "bootstrap4-theme",
+  "name": "bootstrap-first-theme",
   "version": "1.0.0",
   "description": "first bootstrap 4 theme",
   "main": "index.js",
-  "scripts": {},
-  "author": "Jurr",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Verthon/bootstrap-first-theme.git"
+  },
+  "author": "",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Verthon/bootstrap-first-theme/issues"
+  },
+  "homepage": "https://github.com/Verthon/bootstrap-first-theme#readme",
   "dependencies": {
-    "boostrap": "^2.0.0",
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
   }
 }
