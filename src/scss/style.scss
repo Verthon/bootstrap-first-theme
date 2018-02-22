@@ -64,6 +64,13 @@ a{
   background-position: center;
   min-height: 33rem;
 }
+.fa-check{
+  color: #252525;
+  border-radius: 15%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background: rgba(255,255,255,0.75);
+}
 .site-header-heading{
   font-size: 4.0rem;
   font-weight: 300;
@@ -84,14 +91,45 @@ a{
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.35);
 }
 
+//section about us
+
+.about-us-section{
+
+}
+.section-heading{
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-top: 4rem;
+  position: relative;
+}
+.section-heading::before{
+  width: 3rem;
+  content: "";
+  height: 0.13rem;
+  background: $light-black;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -25px);
+  position: absolute;
+}
+.person{
+  margin-bottom: 2rem;
+}
+.site-footer{
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+  align-items: center;
+  justify-items: center;
+}
 @media(max-width: 786px){
   .overlay{
     padding: 2rem 0;
   }
   .site-header-heading{
     font-size: 2.1rem;
-    font-weight: 300;
-    line-height: 1.2;
     margin-bottom: 2rem;
   }
 }
