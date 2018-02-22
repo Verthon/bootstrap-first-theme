@@ -1,8 +1,8 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
+const gulp        = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass        = require('gulp-sass');
 
-// Compile sass into CSS & auto-inject into browsers
+// Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
         .pipe(sass())
@@ -10,14 +10,14 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-// Move the javascript files into our /src/js folder
+// Move JS Files to src/js
 gulp.task('js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
         .pipe(gulp.dest("src/js"))
         .pipe(browserSync.stream());
 });
 
-// Static Server + watching scss/html files
+// Watch Sass & Serve
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
@@ -28,4 +28,16 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['js','serve']);
+// Move Fonts to src/fonts
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('src/fonts'))
+})
+
+// Move Font Awesome CSS to src/css
+gulp.task('fa', function() {
+  return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+    .pipe(gulp.dest('src/css'))
+})
+
+gulp.task('default', ['js','serve', 'fa', 'fonts']);
