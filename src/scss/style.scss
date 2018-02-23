@@ -13,23 +13,23 @@
 @import "../../node_modules/bootstrap/scss/images";
 @import "../../node_modules/bootstrap/scss/code";
 @import "../../node_modules/bootstrap/scss/grid";
-@import "../../node_modules/bootstrap/scss/tables";
+// @import "../../node_modules/bootstrap/scss/tables";
 @import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/dropdown";
-@import "../../node_modules/bootstrap/scss/button-group";
+// @import "../../node_modules/bootstrap/scss/button-group";
 @import "../../node_modules/bootstrap/scss/input-group";
 @import "../../node_modules/bootstrap/scss/custom-forms";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/card";
-@import "../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
 @import "../../node_modules/bootstrap/scss/pagination";
 @import "../../node_modules/bootstrap/scss/badge";
-@import "../../node_modules/bootstrap/scss/jumbotron";
+// @import "../../node_modules/bootstrap/scss/jumbotron";
 @import "../../node_modules/bootstrap/scss/alert";
-@import "../../node_modules/bootstrap/scss/progress";
+// @import "../../node_modules/bootstrap/scss/progress";
 @import "../../node_modules/bootstrap/scss/media";
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/close";
@@ -41,7 +41,7 @@
 @import "../../node_modules/bootstrap/scss/print";
 
 $light-black: #252525;
-$pale-gold: #ffffff;
+$white: #ffffff;
 $background-hero: rgba(70, 70, 70, 0.75);
 
 a{
@@ -77,7 +77,7 @@ a{
   line-height: 1.2;
 }
 .bg-appointment{
-  background: $pale-gold;
+  background: $white;
   border:0;
   border-radius: 0;
 }
@@ -123,6 +123,26 @@ a{
   background-color: #eeeeee;
   align-items: center;
   justify-items: center;
+}
+
+//services section
+.services{
+  
+}
+.services-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 0;
+}
+.services-item .fa{
+  color: green;
+  padding: 2rem 0;
+}
+.services-subheading{
+  font-weight: 300;
+  padding: 2rem 0;
 }
 @media(max-width: 786px){
   .overlay{
