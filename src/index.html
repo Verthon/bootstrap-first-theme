@@ -11,7 +11,7 @@
 
   <body id="home">
     <!-- site navigation -->
-    <nav class="navbar navbar-light navbar-expand-md navbar-fixed">
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
       <div class="container">
         <a href="index.html" class="navbar-brand">LAWYER</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,10 @@
               <a href="#home" class="nav-link">home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">who we are</a>
+              <a href="#about" class="nav-link">who we are</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">our team</a>
+              <a href="#team" class="nav-link">our team</a>
             </li>  
             <li class="nav-item">
               <a href="#contact" class="nav-link">contact</a>
@@ -77,16 +77,20 @@
                     <h3 class="py-2">FREE CONSULTATION</h3>
                     <form>
                       <div class="form-group">
-                        <input type="text" class="form-control" placeholder="name">
+                        <label for="name" class="sr-only">Name</label>
+                        <input id="name" type="text" class="form-control" required placeholder="name">
                       </div>
                       <div class="form-group">
-                        <input type="phone" class="form-control" placeholder="phone number">
+                        <label for="phone-number" class="sr-only">Phone number</label>
+                        <input id="phone-number" type="phone" class="form-control" required placeholder="phone number">
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control" placeholder="e-mail">
+                        <label for="email" class="sr-only">Email</label>
+                        <input id="email" type="email" class="form-control" required placeholder="e-mail">
                       </div>
                       <div class="form-group">
-                        <textarea class="form-control" cols="20" rows="5" placeholder="message"></textarea>
+                        <label for="message"class="sr-only">Message</label>
+                        <textarea id="message" class="form-control" required cols="20" rows="5" placeholder="message"></textarea>
                       </div>
                       <button class="btn btn-dark btn-block" type="submit">GET YOUR ANSWER NOW</button>
                     </form>
@@ -101,15 +105,22 @@
     <!-- end of header -->
 
     <!-- Who we are section -->
-    <section class="about-us-section container">
-      <h2 class="section-heading">Who we are</h2>
-      <p class="about-us-description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, eum.
-      </p>
-      <img src="http://via.placeholder.com/350x250" alt="" class="img-fluid">
+    <section id="about" class="about-us-section container">
+      <h2 class="section-heading mb-5">Who we are</h2>
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <p class="about-us-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, eum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, similique!
+          </p>
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <img src="../assets/team.jpg" alt="" class="img-fluid">
+        </div> 
+      </div>   
     </section>
 
-    <section class="attorneys container">
+    <section id="team"class="attorneys container">
       <h2 class="section-heading">Attorneys</h2>
       <p class="attorneys-section-description text-center">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, laboriosam?
@@ -118,19 +129,19 @@
       <div class="row">
         <div class="col-md">
           <div class="card person">
-            <img class="card-img-top img-fluid" src="http://via.placeholder.com/350x250" alt="Card image cap">
+            <img class="card-img-top img-fluid" src="../assets/lawyer.jpg" alt="Card image cap">
             <div class="card-body">
-              <h3 class="card-title text-center">Card title</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3 class="card-title text-center">John Doe</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, consequuntur.</p>
             </div>
           </div>
         </div>  
         <div class="col-md">
           <div class="card person">
-            <img class="card-img-top img-fluid" src="http://via.placeholder.com/350x250" alt="Card image cap">
+            <img class="card-img-top img-fluid" src="../assets/lawyer.jpg" alt="Card image cap">
             <div class="card-body">
-              <h3 class="card-title text-center">Card title</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3 class="card-title text-center">Doe John</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, repudiandae.</p>
             </div>
           </div>
         </div>
