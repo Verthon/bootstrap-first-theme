@@ -44,8 +44,12 @@ $light-black: #252525;
 $white: #ffffff;
 $background-hero: rgba(70, 70, 70, 0.75);
 
+body{
+  font-family: 'Lato';
+}
+
 a{
-  color: red;
+  color: inherit;
 }
 .navbar-light{
   padding: 1rem 2rem;
@@ -96,6 +100,15 @@ a{
 .about-us-section{
 
 }
+.about-us-description{
+  padding: 1.5rem;
+}
+.accordion-item{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
 .section-heading{
   font-size: 2.2rem;
   text-align: center;
@@ -134,7 +147,7 @@ a{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5rem 0;
+  padding: 2.5rem 5rem;
 }
 .services-item .fa{
   color: green;

@@ -111,11 +111,55 @@
     <section id="about" class="about-us-section container">
       <h2 class="section-heading mb-5">Who we are</h2>
       <div class="row">
-        <div class="col-md-5 col-sm-12">
-          <p class="about-us-description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, eum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, similique!
-          </p>
+        <div class="col-md-5 col-sm-12 about-us-description">
+          <h3>Title</h3>
+          <!-- Accordion-->
+          <div id="accordion" role="tablist" aria-multiselectable="true">
+
+              <div class="card">
+                <div class="card-header accordion-item" role="tab" id="headingOne">
+                  <a class="accordion-item" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    First item
+                  </a>
+                  <i class="fa fa-plus" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></i>
+                </div>
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea nesciunt, vitae beatae suscipit voluptatibus. Aspernatur in ex suscipit molestias labore fugit nesciunt dolorum quibusdam.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header accordion-item" role="tab" id="headingTwo">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    second item
+                  </a>
+                  <i class="fa fa-plus" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></i>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-block">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, mollitia laboriosam obcaecati explicabo molestias rem magnam. Earum, nam velit nostrum debitis quos animi! Explicabo, eum?
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header accordion-item" role="tab" id="headingThree">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    third item
+                  </a>
+                  <i class="fa fa-plus" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></i>
+                </div>
+
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="card-block">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium fuga magni veniam deserunt incidunt, laboriosam cum sapiente sint nisi aliquam.
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- End of accordion -->
         </div>
         <div class="col-md-7 col-sm-12">
           <img src="../assets/team.jpg" alt="" class="img-fluid">
@@ -170,7 +214,7 @@
         <div class="col-md-6 sm-12 services-item">
           <i class="fa fa-users fa-3x"></i>
           <h3 class="services-subheading">Employment</h3>
-          <p class="services-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ad.</p>
+          <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, labore?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ad.</p>
         </div>
         <div class="col-md-6 sm-12 services-item">
           <i class="fa fa-legal fa-3x"></i>
@@ -178,6 +222,11 @@
           <p class="services-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ad.</p>
         </div>
       </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-heading">Frequently asked questions</h2>
+      
     </section>
 
     <!-- Site footer -->
