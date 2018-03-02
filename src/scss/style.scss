@@ -25,7 +25,7 @@
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/card";
 // @import "../../node_modules/bootstrap/scss/breadcrumb";
-@import "../../node_modules/bootstrap/scss/pagination";
+// @import "../../node_modules/bootstrap/scss/pagination";
 @import "../../node_modules/bootstrap/scss/badge";
 // @import "../../node_modules/bootstrap/scss/jumbotron";
 @import "../../node_modules/bootstrap/scss/alert";
@@ -150,7 +150,7 @@ a{
   padding: 2.5rem 5rem;
 }
 .services-item .fa{
-  color: green;
+  color: navy;
   padding: 2rem 0;
 }
 .services-subheading{
@@ -163,6 +163,6 @@ a{
   }
   .site-header-heading{
     font-size: 2.1rem;
-    margin-bottom: 2rem;
+    padding: 4rem 0 2rem 0;
   }
 }
